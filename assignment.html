@@ -1,0 +1,244 @@
+<html>
+<head>
+    <title>CSS Box Model – Complete Practice Lab</title>
+
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+        }
+
+        
+        .box {
+            width: 300px;
+            background-color: #e6e6e6;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+        
+        .box.task1{
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+        
+        .box.task2{
+            padding: 10px  40px;
+            margin: 20px 50px;
+            border: dashed 4px blue;
+        }
+
+        
+        .box.task3{
+            border: 3px solid red;
+            width: 300px;
+            padding: 0px 40px;
+
+        }
+
+        
+        .box.task4{
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        
+        .box.task5{
+            border: 5px solid purple;
+            padding: 30px;
+            box-sizing: border-box;
+            margin: 20px;
+        }
+
+        
+        .box.task6{
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        
+        .box.task7{
+            border: 2px solid black;
+            margin: 20px 0px;
+            padding: 15px;
+        }
+
+       
+        .box.task8{
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        
+        .box.task9{
+            width: 300px;
+            border: 4px solid green;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        
+        .box.task10{
+            border: 3px solid gray;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .task10 img{
+            margin-top: 10px;
+        }
+
+        
+        .box.task11{
+            border: 3px solid orange;
+            padding: 0px 40px;
+            margin: 20px;
+            align-items: center;
+            height: 40px;
+            display: flex;
+            
+        }
+
+        
+        .box.task12{
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px 30px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>CSS Box Model – Complete Practice Lab</h1>
+<p style="text-align:center;">
+    Complete all tasks using <strong>padding, border, margin, and box-sizing</strong>.
+    Use DevTools to inspect the box model.
+</p>
+
+<!-- TASK 1 -->
+<div class="section">
+    <h2>Task 1: Basic Box Model</h2>
+    <div class="box task1">
+        Simple text content
+    </div>
+</div>
+
+<!-- TASK 2 -->
+<div class="section">
+    <h2>Task 2: Different Sides</h2>
+    <div class="box task2">
+        left & right spacing should be larger
+    </div>
+</div>
+
+<!-- TASK 3 -->
+<div class="section">
+    <h2>Task 3: Vertical Spacing</h2>
+    <div class="box task3">
+        control vertical spacing
+    </div>
+</div>
+
+<!-- TASK 4 -->
+<div class="section">
+    <h2>Task 4: Image Padding</h2>
+    <div class="box task4">
+        <!-- STUDENT: ADD IMAGE HERE -->
+        <p>Text should not touch border <img src="https://upload.wikimedia.org/wikipedia/en/2/21/Web_of_Spider-Man_Vol_1_129-1.png" alt="spider man"></p>
+    </div>
+</div>
+
+<!-- TASK 5 -->
+<div class="section">
+    <h2>Task 5: Box Sizing</h2>
+    <div class="box task5">
+        Keep total width 300px
+    </div>
+</div>
+
+<!-- TASK 6 -->
+<div class="section">
+    <h2>Task 6: Image Touching Border</h2>
+    <div class="box task6">
+        <!-- STUDENT: ADD IMAGE -->
+        <p>Fix spacing using padding <img src="https://i.pinimg.com/736x/0c/c5/e2/0cc5e2a8fd8d7cd62089a8efa15d9713.jpg" alt="iron man"></p>
+    </div>
+</div>
+
+<!-- TASK 7 -->
+<div class="section">
+    <h2>Task 7: Separate Cards</h2>
+    <div class="box task7">Card One</div>
+    <div class="box task7">Card Two</div>
+</div>
+
+<!-- TASK 8 -->
+<div class="section">
+    <h2>Task 8: Padding or Margin?</h2>
+    <div class="box task8">
+        Text should not touch border
+    </div>
+</div>
+
+<!-- TASK 9 -->
+<div class="section">
+    <h2>Task 9: Fix Width</h2>
+    <div class="box task9">
+        Width must stay 300px
+    </div>
+</div>
+
+<!-- TASK 10 -->
+<div class="section">
+    <h2>Task 10: Image Card</h2>
+    <div class="box task10">
+        <!-- STUDENT: ADD IMAGE -->
+        <h3>Card Title</h3>
+        <p>Spacing must look clean <img src="https://cdn.marvel.com/content/2x/003cap_ons_cut_mob_01_1.jpg" alt="captain america"></p>
+    </div>
+</div>
+
+<!-- TASK 11 -->
+<div class="section">
+    <h2>Task 11: Horizontal Padding</h2>
+    <div class="box task11">
+        Left & right spacing only
+    </div>
+</div>
+
+<!-- TASK 12 -->
+<div class="section">
+    <h2>Task 12: Product Card (Final)</h2>
+    <div class="box task12">
+        <!-- STUDENT: ADD PRODUCT IMAGE -->
+        <h3>Product Name</h3>
+        <p>Description goes here</p>
+        <p><strong>$99</strong></p>
+        <img src="https://u-mercari-images.mercdn.net/photos/m26862347845_1.jpg" alt="hot wheels car">
+    </div>
+</div>
+
+</body>
+</html>
